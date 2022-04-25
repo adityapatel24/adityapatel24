@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Patel - Home</title>
+    <link rel="stylesheet" href="scripts/style.css">
+</head>
+
+<body>
+    <div class="background-image">
+        <nav class="navbar">
+            <div class="AP-Left-Div">
+                <ul class="AP-left">
+                    <li>Aditya Patel</li>
+                </ul>
+            </div>
+            <img class="navbarIcon" src="media/navbar_icon.png">
+            <img class="navbarIconClose btn-hidden" src="media/navbar_close_icon.png">
+            <ul class="navbarUL navbar-hidden">
+                <li><a>Others ⏷</a>
+                    <div class="sub-menu1">
+                        <ul>
+                            <li><a href="">★ File Downloads</a></li>
+                            <li><a href="">☆ Contact Us</a></li>
+                            <li><a href="">☆ Support Us</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">About</a></li>
+                <li><a href="">How-to's</a></li>
+                <li><a>Games ⏷</a>
+                    <div class="sub-menu1" id="gamesmenu">
+                        <ul>
+                            <li><a href="https://play.google.com/store/apps/details?id=com.evolve.mindsetthegame">Mindset The Game</a></li>
+                            <li><a href="https://play.google.com/store/apps/details?id=com.Evolve.BrawlingCaskets">Brawling Caskets</a></li>
+                            <li><a href="">Square Game in Java</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a>Tools ⏷</a>
+                    <div class="sub-menu1" id="toolsmenu">
+                        <ul>
+                            <li><a href="">File Downloader with Java</a>
+                            </li>
+                            <li>
+                                <a href="https://play.google.com/store/apps/details?id=com.study.studymadeeasy">Study Made Easy app</a>
+                            </li>
+                            <li>
+                                <a href="">External Tools link</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>APPS, GAMES AND TOOLS</h1>
+            <p>
+                I develop many Computer Applications which you can download from Menu Above. I also create How-to's or
+                tutorials on various Technical stuff out there. You can find them in How-to's section and Youtube
+                Channel, Instagram. The Media and Files related to my tutorials is availabe in File Downloads section!
+            </p>
+            <div>
+                <ul>
+                    <li><a href="">File Downloads</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="medialinks">
+            <li>
+                <a href="https://www.youtube.com/channel/UCzg6HWiObujFOZsuVrtniVQ"><img src="media/youtube_icon.png"></a>
+                <a href="https://play.google.com/store/apps/dev?id=6200462331430821232"><img src="media/playstore_icon.png"></a>
+                <a href="https://www.instagram.com/evolve.developers/"><img src="media/instagram_icon.png"></a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        const mainMenu = document.querySelector('.navbarUL');
+        const openmenu = document.querySelector('.navbarIcon');
+        const closemenu = document.querySelector('.navbarIconClose');
+        openmenu.addEventListener('click', () => {
+            mainMenu.classList.toggle('navbar-hidden');
+            openmenu.classList.toggle('btn-hidden');
+            closemenu.classList.toggle('btn-hidden');
+        });
+        closemenu.addEventListener('click', () =>{
+            mainMenu.classList.toggle('navbar-hidden');
+            openmenu.classList.toggle('btn-hidden');
+            closemenu.classList.toggle('btn-hidden');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+        * {
+            margin: 0px 0px;
+            padding: 0px 0px;
+        }
+
+        .navbar {
+            margin-right: 100px;
+        }
+
+        .navbar ul {
+            overflow:auto;
+        }
+
+        .navbar li {
+            margin-top: 15px;
+            float: right;
+            list-style: none;
+            margin: 25px 2px;
+            padding: 10px 0px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 17px;
+            transition: all 0.5s ease;
+        }
+
+        .navbar li a {
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            color: white;
+            transition: all 0.4s ease;
+        }
+
+        .navbar li a:hover {
+            transition-duration: 0.4s;
+            background-color: darkslategrey;
+        }
+
+        .AP-left {
+            margin-left: 50px;
+            float: left;
+        }
+
+        .AP-left li {
+            font-size: 20px;
+            padding: 10px 10px;
+        }
+
+        .background-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.75)), url('bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .sub-menu1 {
+            z-index: 1;
+            display: none;
+            border-radius: 15px;
+            width: 180px;
+            margin-top: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .sub-menu1 li {
+            float: left;
+            margin-top: 14px;
+            margin-left: 8px;
+            margin-bottom: 14px;
+        }
+
+        .sub-menu1 li a {
+            padding-left: 10px;
+            margin-left: 5px;
+        }
+
+        .navbar ul li:hover .sub-menu1 {
+            display: block;
+            position: absolute;
+        }
+
+        .medialinks {
+            bottom: 15%;
+            display: flex;
+            position: absolute;
+            margin-left: 10%;
+            margin-bottom: 30px;
+        }
+
+        .medialinks li img {
+            height: 30px;
+            width: 30px;
+            margin-bottom: 0px;
+            margin-top: 10px;
+            margin-inline: 10px;
+            margin-bottom: 10px;
+            border-radius: 100%;
+            border-style: solid;
+            border-color: white;
+            background-color: white;
+            transition: all 0.5s ease;
+            padding: 6px;
+        }
+
+        .medialinks li img:hover {
+            transition-duration: 0.5s;
+            margin-bottom: 25px;
+        }
+
+        .content {
+            z-index: 0;
+            position: fixed;
+            margin-left: 11%;
+            bottom: 36%;
+        }
+
+        .content h1 {
+            color: white;
+            font-weight: lighter;
+            font-size: 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .content p {
+            width: 60%;
+            color: white;
+            font-size: 20px;
+            font-weight: bolder;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+        .content div ul {
+            list-style: none;
+        }
+
+        .content div li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 25px;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 3px;
+            font-size: 16px;
+            font-weight: 400;
+            border-color: greenyellow;
+            background-color: rgba(255, 255, 255, 0.1);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .content div li a:hover {
+            background-color: rgba(123, 223, 23, 0.4);
+        }
+
+        .navbarIcon {
+            width: 28px;
+            height: 28px;
+            z-index: 0;
+            position: relative;
+            float: right;
+            margin-top: 32px;
+            display: none;
+        }
+
+        .navbarIconClose{
+            width: 28px;
+            height: 28px;
+            z-index: 0;
+            position: relative;
+            float: right;
+            margin-top: 32px;
+            display: none;
+        }
+
+        #toolsmenu {
+            width: 300px;
+        }
+
+        #gamesmenu {
+            width: 250px;
+        }
+
+        @media screen and (max-width: 900px) {
+            .content h1 {
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .content {
+                margin-right: 11%;
+            }
+
+            .content p {
+                width: 100%;
+                margin-right: 10px;
+                font-size: 14px;
+            }
+
+            .navbar {
+                margin-right: 0px;
+            }
+
+        }
+
+        @media screen and (max-width: 750px) {
+            .sub-menu1 {
+                z-index: 1;
+                display: none;
+                border-radius: 15px;
+                width: 180px;
+                margin-top: 10px;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.75)), url('bg.jpg');
+            }
+
+            .sub-menu1 li {
+                float: left;
+            }
+
+            .sub-menu1 li a {
+                font-size: 15px;
+            }
+
+            .navbar-hidden {
+                display: none;
+            }
+
+            .navbar {
+                position: fixed;
+                z-index: 1;
+            }
+
+            .navbarUL {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.75)), url('bg.jpg');
+                margin-top: 20px;
+            }
+
+            .navbarUL li {
+                width: 100%;
+                margin: 5px 10px;
+                z-index: 1;
+            }
+
+            .navbarIcon {
+                display: flex;
+                position: fixed;
+                right: 0px;
+                margin-top: 20px;
+                margin-right: 20px;
+            }
+
+            .btn-hidden{
+                visibility: collapse;
+            }
+
+            .btn-visible{
+                visibility: visible;
+            }
+
+            .navbarIconClose{
+                width: 25px;
+                height: 25px;
+                display: flex;
+                margin-top: 20px;
+                margin-right: 20px;
+            }
+
+            .AP-left {
+                margin: 2px 20px;
+            }
+
+            .AP-left li {
+                padding: 0px 0px;
+            }
+
+            .AP-Left-Div ul li {
+                display: block;
+                font-size: 18px;
+            }
+
+            #toolsmenu {
+                width: 200px;
+            }
+
+            #gamesmenu {
+                width: 200px;
+            }
+        }
